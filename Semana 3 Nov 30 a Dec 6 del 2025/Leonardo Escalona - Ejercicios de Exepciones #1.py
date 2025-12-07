@@ -1,3 +1,4 @@
+# Simple calculator program with separated functions
 def display_menu(current):
     print("\nCurrent number:", current)
     print("Choose an operation:")
