@@ -1,6 +1,24 @@
-#This program handles exceptions
+# This program handles exceptions
 # Simple calculator program with separated functions
-def display_menu(current): # Shows the options and current number to the user
+
+# ===== OPERATION FUNCTIONS =====
+def add(current, num):
+    return current + num
+
+def subtract(current, num):
+    return current - num
+
+def multiply(current, num):
+    return current * num
+
+def divide(current, num):
+    if num == 0:
+        print("Error: Cannot divide by zero.")
+        return current
+    return current / num
+
+# ===== INTERFACE FUNCTIONS =====
+def display_menu(current): 
     print("\nCurrent number:", current)
     print("Choose an operation:")
     print("1. Add")
@@ -10,14 +28,12 @@ def display_menu(current): # Shows the options and current number to the user
     print("5. Reset result")
     print("6. Exit")
 
-
 def get_option():
     choice = input("Enter your option: ")
     if choice not in ["1", "2", "3", "4", "5", "6"]:
         print("Error: Invalid option. Please enter a number between 1 and 6.")
         return None
     return choice
-
 
 def get_number():
     try:
@@ -26,21 +42,7 @@ def get_number():
         print("Error: Invalid number. You must enter a numeric value.")
         return None
 
-
-def perform_operation(choice, current, num):
-    if choice == "1":
-        return current + num
-    elif choice == "2":
-        return current - num
-    elif choice == "3":
-        return current * num
-    elif choice == "4":
-        if num == 0:
-            print("Error: Cannot divide by zero.")
-            return current
-        return current / num
-
-
+# ===== MAIN CALCULATOR FUNCTION =====
 def calculator():
     current = 0
     while True:
@@ -60,13 +62,19 @@ def calculator():
             continue
 
         num = get_number()
-
         if num is None:
             continue
+        
+        if choice == "1":
+            current = add(current, num)
+        elif choice == "2":
+            current = subtract(current, num)
+        elif choice == "3":
+            current = multiply(current, num)
+        elif choice == "4":
+            current = divide(current, num)
 
-        current = perform_operation(choice, current, num)
         print("Updated result:", current)
-
 
 # Run calculator
 calculator()
