@@ -1,3 +1,4 @@
+#This progrm handles exceptions
 # Simple calculator program with separated functions
 def display_menu(current): # Shows the options and current number to the user
     print("\nCurrent number:", current)
