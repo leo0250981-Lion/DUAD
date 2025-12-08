@@ -1,5 +1,3 @@
-# DUAD
-
 \# Student Management System
 
 
