@@ -1,0 +1,7 @@
+Commit Notes
+
+commit #1-2ab87 
+This commit was the initial commit ever done in my repository. 
+
+commit #2-4ef97
+This commit was done to add the first branch to this repository called "Added past exercises" 
