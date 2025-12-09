@@ -1,0 +1,118 @@
+1- Start
+
+2- Upon waking up
+
+3- The phone alarm rings at 8:05 a.m.
+a. Turn off the alarm
+b. Get out of bed
+
+4- Otherwise (if the alarm does not ring or I wake up earlier):
+a. Check the time
+b. If it is late → get up immediately
+c. If it is not late → rest 5 more minutes
+
+5- Personal hygiene (morning)
+
+6- Perform:
+a. Brush teeth
+b. Wash face
+(No shower is taken in the morning, shower is mandatory in the afternoon)
+
+7- Preparing for the day
+
+8- Multiple condition based on weather:
+
+If it is cold → wear warm clothes
+If it is hot → wear light clothes
+If it is raining → take an umbrella
+Otherwise → wear normal clothing
+
+9- Breakfast
+
+10- Multiple condition based on availability and time:
+
+If there is time and willingness to prepare breakfast → prepare it and eat calmly
+
+If there is no time or breakfast is preferred to be bought → buy breakfast and eat while organizing backpack/bag or while driving (only if safe)
+
+11- Work based on the day
+
+12- Multiple condition depending on the day of the week:
+
+Monday, Wednesday, Friday (work from home):
+a. Check computer and support tools
+b. Work shift: 9:00 a.m. to 6:00 p.m.
+c. If there are support tickets → work on the tickets
+d. Otherwise → drive Uber
+e. Take breaks when needed
+f. Monday and Friday → if energy and time allow → play soccer
+
+Tuesday and Thursday (work from the office):
+a. Check electric car battery level
+b. Leave home with enough time to arrive at the office by 9:30 a.m. (approx. 1 hour drive)
+c. Option: Have a quick snack while driving (if safe)
+d. Work shift: 9:00 a.m. to 6:00 p.m.
+e. If there are support tickets → work on them
+f. Otherwise → dedicate time to the Lyfter program to improve development skills
+g. Take breaks when needed
+
+Workday Loop:
+While the workday is not over (9:00 a.m.–6:00 p.m.):
+a. Perform assigned tasks
+b. Attend meetings
+c. Resolve technical support tickets
+
+13- Lunch
+
+14- Multiple condition:
+
+If there is food prepared by my wife from the previous day → eat that food
+
+Otherwise → buy lunch
+
+15- Return home (only Tuesday and Thursday)
+
+16- Drive the electric car
+17- While driving:
+a. Listen to music or relax
+b. Option: Have a quick snack (if safe)
+
+18- Personal hygiene (afternoon)
+
+19- Mandatory shower:
+
+Always take a shower in the afternoon, after work or after the day’s activities, without exception
+
+20- Afternoon and evening activities
+
+21- Multiple condition according to energy level:
+
+If I am not very tired →
+a. Drive Uber until around midnight
+b. Charge the electric car while doing Uber or afterward
+
+If I am tired → rest, play soccer if there is energy (Mondays and Fridays), or do lighter activities
+
+22- Dinner
+
+23- Multiple condition:
+
+If my wife cooked → eat what she prepared
+
+Otherwise → buy an inexpensive dinner
+
+24- Before sleeping
+
+25- Watch TV for 5 minutes
+26- Turn off TV when I start feeling sleepy
+
+27- If I still have energy:
+a. Do a little organizing
+b. Check social media or messages
+
+28- Otherwise:
+a. Go directly to sleep
+
+29- Turn off lights and devices
+
+30- End

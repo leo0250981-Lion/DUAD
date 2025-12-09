@@ -1,0 +1,5 @@
+print(5+5)
+print(340+4500)
+print( 92*45)
+print(19-4)
+print(25/5)

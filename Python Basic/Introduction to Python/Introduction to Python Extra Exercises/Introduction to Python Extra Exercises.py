@@ -1,0 +1,13 @@
+##Ejercicios extra de Introduccion de Python##
+print("Cree un algoritmo que use print() para mostrar su nombre completo, su edad, su color favorito y su comida preferida. Debe presentar cada dato en una línea distinta")
+print("Nombre completo: Leonardo Escalona")
+print("Edad: 28 años")
+print("Color favorito: Blanco y Dorado")
+print("Comida preferida: Pizza")
+print("Cree un algoritmo que muestre cuántos años tendrá usted dentro de 10 años. El algoritmo debe usar print() y una operación de suma")
+print("Mi edad en 10 años será:")
+print(28+10, "años")
+print("Cree un algoritmo que defina una cantidad de metros (por ejemplo, 5) y luego use print() para mostrar cuántos centímetros son")
+print("Cuantos centímetros hay en 12 metros")
+print("En 12 metros hay:")
+print(12*100, "centímetros")
