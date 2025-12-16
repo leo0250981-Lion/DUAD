@@ -38,4 +38,5 @@ inventory = Inventory()
 inventory.add_product(product1)
 inventory.add_product(product2)
 
-print(inventory.calculate_total_value_of_inventory())  # 34000
+print(inventory.calculate_total_value_of_inventory())  # 34000 
+#
