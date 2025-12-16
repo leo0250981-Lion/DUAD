@@ -1,30 +1,15 @@
-from menu import show_menu
+def show_menu():
+    print("\n=== STUDENT MANAGEMENT SYSTEM ===")
+    print("1. Add new student")
+    print("2. Display all students")
+    print("3. Top 3 students by average")
+    print("4. Global average score")
+    print("5. Show failing students")
+    print("6. Export students to CSV")
+    print("7. Import students from CSV")
+    print("8. Delete a student")
+    print("9. Exit")
 
-def main():
-    while True:
-        option = show_menu()
+    option = input("Select an option (1-9): ")
+    return option
 
-        if option == "1":
-            print("Add new student")
-        elif option == "2":
-            print("Display all students")
-        elif option == "3":
-            print("Top 3 students by average")
-        elif option == "4":
-            print("Global average score")
-        elif option == "5":
-            print("Show failing students")
-        elif option == "6":
-            print("Export students to CSV")
-        elif option == "7":
-            print("Import students from CSV")
-        elif option == "8":
-            print("Delete a student")
-        elif option == "9":
-            print("Exiting the program...")
-            break
-        else:
-            print("Invalid option. Please try again.")
-
-if __name__ == "__main__":
-    main()
