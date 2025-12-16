@@ -1,76 +1,45 @@
-\# DUAD - Full Course Repository
+🚀 DUAD – Full Course Repository
 
+This repository contains all assignments, exercises, notes, and learning progress completed throughout the DUAD (De Usuario A Desarrollador) course.
 
+It covers foundational IT skills, programming logic, Python development, file automation, and GitHub project management.
 
-This repository contains all weekly tasks, exercises, and the final project completed during the DUAD course.
+📂 Folder Structure Overview
+Folder	Description
+GitHub Project and Excercises	Git and GitHub workflow, commands, commits, branching, repository management
+IT Essentials	Core IT fundamentals: hardware, operating systems, troubleshooting and configuration
+Programming Logic	Pseudocode, logical structures, flowcharts, decision models and problem-solving
+Python Basic	Python fundamentals, control structures, functions, exception handling, CSV and file automation
+.gitignore	Specifies files and patterns excluded from version control
+README.md	Documentation of the entire DUAD repository
+🧑‍💻 Course Skills Developed
 
+✔ Version control with Git & GitHub
+✔ Structuring repositories and documentation
+✔ Algorithmic problem solving
+✔ Pseudocode & flowchart modeling
+✔ Python programming fundamentals
+✔ Automated file and CSV processing
+✔ Validation and exception handling
+✔ Modular code organization
 
+🎯 Learning Objectives of This Repository
 
-\## 📂 Folder Structure
+Demonstrate understanding of course concepts
 
+Showcase incremental weekly learning
 
+Build real applications using Python
 
-| Folder | Description |
+Apply Git version control professionally
 
-|--------|------------|
+Organize technical documentation
 
-| Semana 1 | Week 1 assignments |
+📝 About This Repository
 
-| Semana 2 | Week 2 assignments |
+This repository reflects the complete learning journey through the DUAD program, progressing week by week from basic logic to full program automation and GitHub integration.
 
-| Semana 3 | Week 3 assignments |
-
-| Semana 4 | Week 4 assignments + Start of Final Project |
-
-| student\_system | Final CLI project: Student Management System |
-
-
-
----
-
-
-
-\## 🧑‍💻 Final Project - Student Management System
-
-
-
-The final project of the course is located inside the `student\_system` folder.  
-
-It includes:
-
-
-
-\- CLI Menu navigation
-
-\- Student registration
-
-\- Grade validation
-
-\- CSV export/import
-
-\- Delete functionality
-
-\- Failing student report
-
-\- Modular code following SRP design principle
-
-
-
-Full documentation is inside `student\_system/README.md`.
-
-
-
----
-
-
-
-\## 📝 About this repository
-
-
-
-This repository represents the progression of learning and practice through the DUAD program.  
-
-Each folder corresponds to weekly work and improvements in Python programming.
+📌 All work is organized to serve as future reference for portfolio and continuing development.
 
 
 
