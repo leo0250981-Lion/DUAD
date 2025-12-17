@@ -1,13 +1,24 @@
+PASSING_GRADE = 60
+
+
 def is_valid_name(name):
-    return name.replace(" ", "").isalpha() and len(name) > 0
+    clean_name = name.strip()
+    return clean_name.replace(" ", "").isalpha() and len(clean_name) > 0
 
 
 def is_valid_section(section):
-    return len(section) == 3 and section[:-1].isdigit() and section[-1].isalpha()
+    return (
+        len(section) == 3
+        and section[:-1].isdigit()
+        and section[-1].isalpha()
+    )
 
 
 def student_exists(students, name, section):
-    return any(s["name"] == name and s["section"] == section for s in students)
+    return any(
+        s["name"] == name and s["section"] == section
+        for s in students
+    )
 
 
 def get_valid_grade(subject):
@@ -26,10 +37,11 @@ def add_student(students):
     print("\n--- Add Student ---")
 
     while True:
-        name = input("Enter full name: ").strip()
+        name = input("Enter full name: ")
         if not is_valid_name(name):
             print("Invalid name. Cannot be empty and must contain only letters.")
             continue
+        name = name.strip()
         break
 
     while True:
@@ -61,6 +73,7 @@ def add_student(students):
 
     students.append(student)
     print("Student added successfully!")
+    return student
 
 
 def display_students(students):
@@ -70,7 +83,10 @@ def display_students(students):
 
     print("\n--- All Students ---")
     for s in students:
-        print(f"{s['name']} | Section: {s['section']} | Avg: {s['average']:.2f}")
+        print(
+            f"{s['name']} | Section: {s['section']} | "
+            f"Avg: {s['average']:.2f}"
+        )
 
 
 def display_top_students(students):
@@ -78,10 +94,12 @@ def display_top_students(students):
         print("Not enough students to calculate Top 3.")
         return
 
-    top = sorted(students, key=lambda x: x["average"], reverse=True)[:3]
+    top_students = sorted(
+        students, key=lambda x: x["average"], reverse=True
+    )[:3]
 
     print("\n--- Top 3 Students ---")
-    for s in top:
+    for s in top_students:
         print(f"{s['name']} | Avg: {s['average']:.2f}")
 
 
@@ -101,37 +119,49 @@ def delete_student(students):
 
     for s in students:
         if s["name"] == name and s["section"] == section:
-            confirm = input("Are you sure you want to delete this student? (yes/no): ").lower()
+            confirm = input(
+                "Are you sure you want to delete this student? (yes/no): "
+            ).lower()
             if confirm == "yes":
                 students.remove(s)
                 print("Student removed successfully!")
             else:
                 print("Operation canceled.")
             return
-    
+
     print("Student not found.")
 
 
 def show_failing_students(students):
-    print("\n--- Failing Students (below 60 in any subject) ---")
+    print("\n--- Failing Students (below passing grade) ---")
 
-    failing_list = [
-        s for s in students if s["spanish"] < 60 or s["english"] < 60 or s["socials"] < 60 or s["science"] < 60
+    failing_students = [
+        s for s in students
+        if (
+            s["spanish"] < PASSING_GRADE
+            or s["english"] < PASSING_GRADE
+            or s["socials"] < PASSING_GRADE
+            or s["science"] < PASSING_GRADE
+        )
     ]
 
-    if not failing_list:
+    if not failing_students:
         print("No failing students.")
         return
 
-    for s in failing_list:
+    for s in failing_students:
         failed_subjects = []
-        if s["spanish"] < 60:
+
+        if s["spanish"] < PASSING_GRADE:
             failed_subjects.append(f"Spanish ({s['spanish']})")
-        if s["english"] < 60:
+        if s["english"] < PASSING_GRADE:
             failed_subjects.append(f"English ({s['english']})")
-        if s["socials"] < 60:
+        if s["socials"] < PASSING_GRADE:
             failed_subjects.append(f"Socials ({s['socials']})")
-        if s["science"] < 60:
+        if s["science"] < PASSING_GRADE:
             failed_subjects.append(f"Science ({s['science']})")
 
-        print(f"{s['name']} | Section: {s['section']} | Failed: {', '.join(failed_subjects)}")
+        print(
+            f"{s['name']} | Section: {s['section']} | "
+            f"Failed: {', '.join(failed_subjects)}"
+        )
