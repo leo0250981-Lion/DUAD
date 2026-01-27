@@ -64,23 +64,3 @@ Ensure that Python 3.10 or higher is installed.
 Run the application using the following command:
 ```bash
 python main.py
-## Key Concepts Applied
-
-Modular programming
-
-Function scope and control
-
-Input validation and error handling
-
-Sorting and data aggregation
-
-File handling using CSV
-
-Clean and user-friendly CLI interaction
-
-## Author
-
-Leonardo Escalona
-Python Intermediate – Student Project
-
-First Pull Request Created On: 12/12/2025
