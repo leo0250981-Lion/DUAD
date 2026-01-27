@@ -11,7 +11,7 @@ from data import export_data, import_data
 
 
 def main():
-    students = []  # estado principal del programa
+    students = []  # main program state
 
     while True:
         option = show_menu().strip()
@@ -35,7 +35,7 @@ def main():
             export_data(students)
 
         elif option == "7":
-            students = import_data()  # IMPORTANTE: reasignar
+            students = import_data()  # IMPORTANT: reassign list
 
         elif option == "8":
             delete_student(students)
@@ -44,6 +44,8 @@ def main():
             print("Exiting the program...")
             break
 
+        else:
+            print("Invalid option. Please try again.")
 
 
 if __name__ == "__main__":
