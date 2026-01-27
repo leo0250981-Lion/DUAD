@@ -165,3 +165,18 @@ def show_failing_students(students):
             f"{s['name']} | Section: {s['section']} | "
             f"Failed: {', '.join(failed_subjects)}"
         )
+# ===== ALIASES REQUIRED BY MAIN / TEACHER =====
+# These functions reuse existing logic without duplication
+
+def top_3_students(students):
+    """
+    Alias for display_top_students
+    """
+    display_top_students(students)
+
+
+def global_average(students):
+    """
+    Alias for show_global_average
+    """
+    show_global_average(students)
