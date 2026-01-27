@@ -63,3 +63,24 @@ Ensure that **Python 3.10 or higher** is installed.
 Run the application using the following command:
 ```bash
 python main.py
+
+🧠 Key Concepts Applied
+
+Functions and scope (no global data misuse)
+
+Input validation and error handling
+
+Modular programming
+
+Sorting and aggregation
+
+File handling with CSV
+
+Clean CLI interaction
+
+✅ Author
+
+Leonardo Escalona
+Python Intermediate – Student Project
+
+Pull Request Created on: 12/12/2025
