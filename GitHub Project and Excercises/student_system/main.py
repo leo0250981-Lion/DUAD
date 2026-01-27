@@ -3,8 +3,8 @@ from menu import show_menu
 from actions import (
     add_student,
     display_students,
-    display_top_students,
-    show_global_average,
+    top_3_students,
+    global_average,
     show_failing_students,
     delete_student,
 )
@@ -25,10 +25,10 @@ def main():
             display_students(students)
 
         elif option == "3":
-            display_top_students(students)
+            top_3_students(students)
 
         elif option == "4":
-            show_global_average(students)
+            global_average(students)
 
         elif option == "5":
             show_failing_students(students)
@@ -51,4 +51,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main
+    main()
