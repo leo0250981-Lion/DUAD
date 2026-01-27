@@ -10,4 +10,8 @@ def show_menu():
     print("8. Delete a student")
     print("9. Exit")
 
-    return input("Select an option (1-9): ")
+    while True:
+        option = input("Select an option (1-9): ").strip()
+        if option in {"1", "2", "3", "4", "5", "6", "7", "8", "9"}:
+            return option
+        print("Invalid option. Please try again.")

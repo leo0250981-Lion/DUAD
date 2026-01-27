@@ -5,13 +5,13 @@ from actions import (
     top_3_students,
     global_average,
     show_failing_students,
-    delete_student,
+    delete_student
 )
 from data import export_data, import_data
 
 
 def main():
-    students = []
+    students = []  # estado principal del programa
 
     while True:
         option = show_menu().strip()
@@ -35,7 +35,7 @@ def main():
             export_data(students)
 
         elif option == "7":
-            students = import_data()
+            students = import_data()  # IMPORTANTE: reasignar
 
         elif option == "8":
             delete_student(students)
@@ -44,8 +44,6 @@ def main():
             print("Exiting the program...")
             break
 
-        else:
-            print("Invalid option. Please try again.")
 
 
 if __name__ == "__main__":
