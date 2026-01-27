@@ -62,24 +62,23 @@ student_system/
 Ensure that Python 3.10 or higher is installed.
 
 Run the application using the following command:
-''''bash
-python main.py
+''''bash python main.py
 
-Key Concepts Applied
+## Key Concepts Applied
 
-Modular programming
+1. Modular programming
 
-Function scope and control
+2. Function scope and control
 
-Input validation and error handling
+3. Input validation and error handling
 
-Sorting and data aggregation
+4. Sorting and data aggregation
 
-File handling using CSV
+5. File handling using CSV
 
-Clean and user-friendly CLI interaction
+6. Clean and user-friendly CLI interaction
 
-Author
+## Author
 
 Leonardo Escalona
 Python Intermediate – Student Project
