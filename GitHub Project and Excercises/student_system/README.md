@@ -61,8 +61,7 @@ student_system/
 Ensure that **Python 3.10 or higher** is installed.
 
 Run the application using the following command:
-```bash
-python main.py
+```bash python main.py
 
 🧠 Key Concepts Applied
 
