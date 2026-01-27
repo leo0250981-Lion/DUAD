@@ -9,7 +9,7 @@ def export_data(students):
         print("No data to export.")
         return
 
-    with open(FILE_NAME, mode="w", newline="", encoding="utf-8") as file:
+    with open(FILE_NAME, "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(
             ["name", "section", "spanish", "english", "socials", "science", "average"]
@@ -23,7 +23,7 @@ def export_data(students):
                 s["english"],
                 s["socials"],
                 s["science"],
-                s["average"]
+                s["average"],
             ])
 
     print("Data exported to students.csv")
@@ -31,11 +31,11 @@ def export_data(students):
 
 def import_data():
     if not os.path.exists(FILE_NAME):
-        print("No CSV file found. Export data first.")
+        print("No CSV file found.")
         return []
 
-    data = []
-    with open(FILE_NAME, mode="r", encoding="utf-8") as file:
+    students = []
+    with open(FILE_NAME, "r", encoding="utf-8") as file:
         reader = csv.DictReader(file)
 
         for row in reader:
@@ -44,7 +44,7 @@ def import_data():
             row["socials"] = float(row["socials"])
             row["science"] = float(row["science"])
             row["average"] = float(row["average"])
-            data.append(row)
+            students.append(row)
 
     print("Data imported successfully!")
-    return data
+    return students
