@@ -27,8 +27,7 @@ def get_valid_grade(subject):
             grade = float(input(f"Enter grade for {subject} (0-100): "))
             if 0 <= grade <= 100:
                 return grade
-            else:
-                print("Grade must be between 0 and 100.")
+            print("Grade must be between 0 and 100.")
         except ValueError:
             print("Invalid input. Enter a numeric value.")
 
@@ -73,7 +72,6 @@ def add_student(students):
 
     students.append(student)
     print("Student added successfully!")
-    return student
 
 
 def display_students(students):
@@ -112,6 +110,27 @@ def show_global_average(students):
     print(f"\nGlobal average score: {global_avg:.2f}")
 
 
+def show_failing_students(students):
+    print("\n--- Failing Students (below passing grade) ---")
+
+    failing = [
+        s for s in students
+        if (
+            s["spanish"] < PASSING_GRADE
+            or s["english"] < PASSING_GRADE
+            or s["socials"] < PASSING_GRADE
+            or s["science"] < PASSING_GRADE
+        )
+    ]
+
+    if not failing:
+        print("No failing students.")
+        return
+
+    for s in failing:
+        print(f"{s['name']} | Section: {s['section']}")
+
+
 def delete_student(students):
     print("\n--- Delete Student ---")
     name = input("Enter the name of the student: ").strip()
@@ -119,9 +138,7 @@ def delete_student(students):
 
     for s in students:
         if s["name"] == name and s["section"] == section:
-            confirm = input(
-                "Are you sure you want to delete this student? (yes/no): "
-            ).lower()
+            confirm = input("Confirm delete (yes/no): ").lower()
             if confirm == "yes":
                 students.remove(s)
                 print("Student removed successfully!")
@@ -132,51 +149,10 @@ def delete_student(students):
     print("Student not found.")
 
 
-def show_failing_students(students):
-    print("\n--- Failing Students (below passing grade) ---")
-
-    failing_students = [
-        s for s in students
-        if (
-            s["spanish"] < PASSING_GRADE
-            or s["english"] < PASSING_GRADE
-            or s["socials"] < PASSING_GRADE
-            or s["science"] < PASSING_GRADE
-        )
-    ]
-
-    if not failing_students:
-        print("No failing students.")
-        return
-
-    for s in failing_students:
-        failed_subjects = []
-
-        if s["spanish"] < PASSING_GRADE:
-            failed_subjects.append(f"Spanish ({s['spanish']})")
-        if s["english"] < PASSING_GRADE:
-            failed_subjects.append(f"English ({s['english']})")
-        if s["socials"] < PASSING_GRADE:
-            failed_subjects.append(f"Socials ({s['socials']})")
-        if s["science"] < PASSING_GRADE:
-            failed_subjects.append(f"Science ({s['science']})")
-
-        print(
-            f"{s['name']} | Section: {s['section']} | "
-            f"Failed: {', '.join(failed_subjects)}"
-        )
-# ===== ALIASES REQUIRED BY MAIN / TEACHER =====
-# These functions reuse existing logic without duplication
-
+# ===== REQUIRED BY TEACHER =====
 def top_3_students(students):
-    """
-    Alias for display_top_students
-    """
     display_top_students(students)
 
 
 def global_average(students):
-    """
-    Alias for show_global_average
-    """
     show_global_average(students)
