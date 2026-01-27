@@ -1,0 +1,36 @@
+# User Class with date_of_birth and age property
+
+from datetime import date
+
+class User:
+    def __init__(self, name, date_of_birth):
+        self.name = name
+        self.date_of_birth = date_of_birth
+
+    @property
+    def age(self):
+        today = date.today()
+        return today.year - self.date_of_birth.year - (
+            (today.month, today.day) < (self.date_of_birth.month, self.date_of_birth.day)
+        )
+
+# Decorator that checks if the user is an adult
+
+def require_adult(func):
+    def wrapper(user, *args, **kwargs):
+        if user.age < 18:
+            raise Exception("User must be an adult")
+        return func(user, *args, **kwargs)
+    return wrapper
+
+# Example of Usage 
+# @require_adult
+# def access_service(user):
+#    print(f"{user.name} can access the service")
+
+
+# adult_user = User("Carlos", date(1995, 5, 10))
+# minor_user = User("Ana", date(2010, 3, 20))
+
+# access_service(adult_user)   # Works
+# access_service(minor_user)   # Raises exception
