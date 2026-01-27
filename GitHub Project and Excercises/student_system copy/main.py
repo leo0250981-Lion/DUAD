@@ -1,30 +1,52 @@
 from menu import show_menu
+from actions import (
+    add_student,
+    display_students,
+    top_3_students,
+    global_average,
+    show_failing_students,
+    delete_student,
+)
+from data import export_data, import_data
+
 
 def main():
+    students = []
+
     while True:
-        option = show_menu()
+        option = show_menu().strip()
 
         if option == "1":
-            print("Add new student")
+            add_student(students)
+
         elif option == "2":
-            print("Display all students")
+            display_students(students)
+
         elif option == "3":
-            print("Top 3 students by average")
+            top_3_students(students)
+
         elif option == "4":
-            print("Global average score")
+            global_average(students)
+
         elif option == "5":
-            print("Show failing students")
+            show_failing_students(students)
+
         elif option == "6":
-            print("Export students to CSV")
+            export_data(students)
+
         elif option == "7":
-            print("Import students from CSV")
+            students = import_data()
+
         elif option == "8":
-            print("Delete a student")
+            delete_student(students)
+
         elif option == "9":
             print("Exiting the program...")
             break
+
         else:
             print("Invalid option. Please try again.")
+
 
 if __name__ == "__main__":
     main()
