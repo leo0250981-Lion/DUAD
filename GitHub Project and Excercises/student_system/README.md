@@ -1,26 +1,27 @@
-# 🎓 Student Management System
+# Student Management System
 
-## 📌 General Description
-The **Student Management System** is a command-line interface (CLI) application developed in **Python**. Its purpose is to manage student academic information, including student registration, grade management, average calculations, and performance evaluation.
+## Overview
+The Student Management System is a command-line interface (CLI) application developed in Python.  
+It allows users to manage student academic records, including grades, sections, averages, and performance evaluation.
 
-This project was designed following **modular programming principles**, **proper scope management**, and **separation of concerns**, ensuring clean, readable, and maintainable code.
-
----
-
-## ✨ Features
-- ➕ Register new students
-- ✅ Validate student names, sections, and grades
-- 📋 Display all registered students
-- 🏆 Display the Top 3 students based on average score
-- 📊 Calculate the global average score
-- ❌ Identify failing students (below the passing grade)
-- 💾 Export student data to a CSV file
-- 📂 Import student data from a CSV file
-- 🗑 Safely delete students with confirmation
+The project follows modular programming principles and proper separation of concerns to ensure clean, readable, and maintainable code.
 
 ---
 
-## 🗂️ Project Structure
+## Features
+- Add new students
+- Validate student name, section, and grades
+- Display all registered students
+- Show the Top 3 students by average score
+- Calculate the global average score
+- Display failing students (below passing grade)
+- Export student data to a CSV file
+- Import student data from a CSV file
+- Delete students safely with confirmation
+
+---
+
+## Project Structure
 student_system/
 │
 ├── main.py # Program entry point and application flow
@@ -33,53 +34,53 @@ student_system/
 
 ---
 
-## ⚙️ System Workflow
-1. The program execution starts in `main.py`
-2. The main menu is displayed using `menu.py`
-3. Based on user input, corresponding actions are executed from `actions.py`
-4. Student data persistence is handled through CSV functions in `data.py`
-5. All data is managed in memory using Python lists and dictionaries
+## System Workflow
+1. The program starts execution in main.py
+2. The menu is displayed using menu.py
+3. User actions are handled by functions in actions.py
+4. Student data can be saved and loaded using CSV files through data.py
+5. All data is stored in memory using Python lists and dictionaries
 
 ---
 
-## 🧪 Data Validation Rules
+## Data Validation Rules
 - Student names must contain only letters and spaces
-- Sections must follow the format: `10A`, `11B`, etc.
-- Grades must be numeric values between **0 and 100**
-- The passing grade is defined as **60**
+- Sections must follow the format: 10A, 11B, etc.
+- Grades must be numeric values between 0 and 100
+- The passing grade is defined as 60
 
 ---
 
-## 💾 CSV Support
-- Export student data to `students.csv`
-- Import existing student data from `students.csv`
+## CSV Support
+- Export student data to students.csv
+- Import existing student data from students.csv
 - Grades and averages are automatically converted back to numeric values upon import
 
 ---
 
-## ▶️ How to Run the Program
-Ensure that **Python 3.10 or higher** is installed.
+## How to Run the Program
+Ensure that Python 3.10 or higher is installed.
 
 Run the application using the following command:
-```bash python main.py
-
-🧠 Key Concepts Applied
-
-Functions and scope (no global data misuse)
-
-Input validation and error handling
+```bash
+python main.py
+## Key Concepts Applied
 
 Modular programming
 
-Sorting and aggregation
+Function scope and control
 
-File handling with CSV
+Input validation and error handling
 
-Clean CLI interaction
+Sorting and data aggregation
 
-✅ Author
+File handling using CSV
+
+Clean and user-friendly CLI interaction
+
+## Author
 
 Leonardo Escalona
 Python Intermediate – Student Project
 
-Pull Request Created on: 12/12/2025
+First Pull Request Created On: 12/12/2025
