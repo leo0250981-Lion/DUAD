@@ -1,5 +1,4 @@
 from menu import show_menu
-
 from actions import (
     add_student,
     display_students,
@@ -8,7 +7,6 @@ from actions import (
     show_failing_students,
     delete_student,
 )
-
 from data import export_data, import_data
 
 
@@ -16,7 +14,7 @@ def main():
     students = []
 
     while True:
-        option = show_menu()
+        option = show_menu().strip()
 
         if option == "1":
             add_student(students)
