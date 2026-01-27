@@ -10,6 +10,4 @@ def show_menu():
     print("8. Delete a student")
     print("9. Exit")
 
-    option = input("Select an option (1-9): ")
-    return option
-
+    return input("Select an option (1-9): ")
