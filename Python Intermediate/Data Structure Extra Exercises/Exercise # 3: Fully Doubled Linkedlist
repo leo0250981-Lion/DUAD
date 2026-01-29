@@ -1,0 +1,101 @@
+#Doubly Linked List
+
+class DoublyNode:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+
+    def append(self, data):
+        new_node = DoublyNode(data)
+
+        if self.head is None:
+            self.head = self.tail = new_node
+        else:
+            new_node.prev = self.tail
+            self.tail.next = new_node
+            self.tail = new_node
+
+    def prepend(self, data):
+        new_node = DoublyNode(data)
+
+        if self.head is None:
+            self.head = self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+
+    def delete(self, data):
+        current = self.head
+
+        while current is not None:
+            if current.data == data:
+                if current.prev is not None:
+                    current.prev.next = current.next
+                else:
+                    self.head = current.next
+
+                if current.next is not None:
+                    current.next.prev = current.prev
+                else:
+                    self.tail = current.prev
+                return
+
+            current = current.next
+
+    def print_forward(self):
+        current = self.head
+
+        while current is not None:
+            print(current.data, end="")
+            if current.next is not None:
+                print(" -> ", end="")
+            current = current.next
+        print()
+
+    def print_backward(self):
+        current = self.tail
+
+        while current is not None:
+            print(current.data, end="")
+            if current.prev is not None:
+                print(" -> ", end="")
+            current = current.prev
+        print()
+
+# Example of Usage
+
+# dll = DoublyLinkedList()
+
+# dll.append("A")
+# dll.append("B")
+# dll.append("C")
+
+# dll.print_forward()
+# A -> B -> C
+
+# dll.print_backward()
+# C -> B -> A
+
+# dll.prepend("X")
+
+# dll.print_forward()
+# X -> A -> B -> C
+
+# dll.print_backward()
+# C -> B -> A -> X
+
+# dll.delete("B")
+
+# dll.print_forward()
+# X -> A -> C
+
+# dll.print_backward()
+# C -> A -> X
