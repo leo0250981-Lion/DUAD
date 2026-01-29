@@ -1,0 +1,50 @@
+#Binary Tree (Object Structure)
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+
+class BinaryTree:
+    def __init__(self):
+        self.root = None
+
+    def set_root(self, value):
+        self.root = TreeNode(value)
+        return self.root
+
+    def print_tree(self):
+        if self.root is None:
+            print("(empty tree)")
+            return
+        self._print_tree_recursive(self.root, 0)
+
+    def _print_tree_recursive(self, node, level):
+        if node is None:
+            return
+
+        # Print right subtree first so it appears on top (sideways view)
+        self._print_tree_recursive(node.right, level + 1)
+
+        # Indentation based on depth
+        spaces = 4 * level
+        print(" " * spaces + str(node.value))
+
+        # Print left subtree last so it appears on bottom
+        self._print_tree_recursive(node.left, level + 1)
+
+#Example of Usage
+# tree = BinaryTree()
+
+# root = tree.set_root(10)
+# root.left = TreeNode(5)
+# root.right = TreeNode(15)
+
+# root.left.left = TreeNode(2)
+# root.left.right = TreeNode(7)
+
+# root.right.left = TreeNode(12)
+# root.right.right = TreeNode(20)
+
+# tree.print_tree()
