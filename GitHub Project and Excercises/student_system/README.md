@@ -1,95 +1,86 @@
-🎓 Student Management System
-📌 Overview
+# Student Management System
 
-The Student Management System is a command-line interface (CLI) application built in Python that allows users to manage student academic information, including grades, sections, averages, and performance tracking.
+## Overview
+The Student Management System is a command-line interface (CLI) application developed in Python.  
+It allows users to manage student academic records, including grades, sections, averages, and performance evaluation.
 
-The project is structured using modular design, follows good scope practices, and separates concerns across multiple files for maintainability and scalability.
+The project follows modular programming principles and proper separation of concerns to ensure clean, readable, and maintainable code.
 
-✨ Features
+---
 
-Add new students
+## Features
+- Add new students
+- Validate student name, section, and grades
+- Display all registered students
+- Show the Top 3 students by average score
+- Calculate the global average score
+- Display failing students (below passing grade)
+- Export student data to a CSV file
+- Import student data from a CSV file
+- Delete students safely with confirmation
 
-Validate student name, section, and grades
+---
 
-Display all registered students
-
-Show the Top 3 students by average
-
-Calculate global average score
-
-Show failing students (below passing grade)
-
-Export student data to CSV
-
-Import student data from CSV
-
-Delete students safely with confirmation
-
-🗂️ Project Structure
+## Project Structure
 student_system/
 │
-├── main.py          # Application entry point and menu control
-├── menu.py          # Menu display and user option selection
-├── actions.py       # Core business logic and validations
-├── data.py          # CSV import/export handling
-├── students.csv     # Generated CSV file (after export)
-├── README.md        # Project documentation
+├── main.py # Program entry point and application flow
+├── menu.py # Menu display and user interaction
+├── actions.py # Core business logic and validations
+├── data.py # CSV import/export handling
+├── students.csv # Generated CSV file (after export)
+└── README.md # Project documentation
 
-⚙️ How It Works
 
-The program starts from main.py
+---
 
-The menu is displayed using menu.py
+## System Workflow
+1. The program starts execution in main.py
+2. The menu is displayed using menu.py
+3. User actions are handled by functions in actions.py
+4. Student data can be saved and loaded using CSV files through data.py
+5. All data is stored in memory using Python lists and dictionaries
 
-Based on user selection, actions are executed from actions.py
+---
 
-Student data can be persisted using CSV functions in data.py
+## Data Validation Rules
+- Student names must contain only letters and spaces
+- Sections must follow the format: 10A, 11B, etc.
+- Grades must be numeric values between 0 and 100
+- The passing grade is defined as 60
 
-All data is managed in memory using Python lists and dictionaries
+---
 
-🧪 Data Validation Rules
+## CSV Support
+- Export student data to students.csv
+- Import existing student data from students.csv
+- Grades and averages are automatically converted back to numeric values upon import
 
-Names must contain only letters and spaces
+---
 
-Sections must follow the format: 10A, 11B, etc.
+## How to Run the Program
+Ensure that Python 3.10 or higher is installed.
 
-Grades must be numeric values between 0 and 100
+Run the application using the following command:
+''''bash python main.py
 
-Passing grade is defined as 60
+## Key Concepts Applied
 
-💾 CSV Support
+1. Modular programming
 
-Export student data to students.csv
+2. Function scope and control
 
-Import existing student data from students.csv
+3. Input validation and error handling
 
-Automatically converts grades back to numeric values on import
+4. Sorting and data aggregation
 
-▶️ How to Run the Project
+5. File handling using CSV
 
-Make sure you have Python 3.10+ installed.
+6. Clean and user-friendly CLI interaction
 
-python main.py
-
-🧠 Key Concepts Applied
-
-Functions and scope (no global data misuse)
-
-Input validation and error handling
-
-Modular programming
-
-Sorting and aggregation
-
-File handling with CSV
-
-Clean CLI interaction
-
-✅ Author
+## Author
 
 Leonardo Escalona
 Python Intermediate – Student Project
 
-
-Pull Request Created on: 12/12/2025 
-
+First Pull Request Created On: 12/12/2025
