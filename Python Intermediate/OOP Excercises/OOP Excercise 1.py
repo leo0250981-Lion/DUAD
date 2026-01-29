@@ -5,6 +5,6 @@ class Circle:
 
     def get_area(self):
         return math.pi * (self.radius ** 2) 
- #Example the area of a Circle 
+ #Example    
 circle = Circle(5)
 print(circle.get_area())
