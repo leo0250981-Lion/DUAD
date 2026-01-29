@@ -1,0 +1,29 @@
+# @requires_login decorator
+
+user_logged_in = False
+
+
+def requires_login(func):
+    def wrapper(*args, **kwargs):
+        if not user_logged_in:
+            raise Exception("Not an Authenticated user")
+        return func(*args, **kwargs)
+    return wrapper
+
+# Example of Usage 
+
+# @requires_login
+# def view_profile():
+#    print("Showing user orofile")
+
+# view_profile()
+
+# Example of Output when user_logged_in=False
+# Exception: Not an authenticated user
+
+# Example if the User is Logged in
+# user_logged_in = True
+# view_profile()
+
+# Example of the Output if user is logged in
+# Showing user profile

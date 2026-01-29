@@ -1,0 +1,19 @@
+# @repeat_twice decorator and function
+
+def repeat_twice(func):
+    def wrapper(*args, **kwargs):
+        func(*args, **kwargs)
+        func(*args, **kwargs)
+    return wrapper
+
+
+@repeat_twice
+def say_hello(name):
+    print(f"Hello, {name}")
+
+# Example 
+say_hello("Jeanca") 
+
+# Example of output 
+Hello, Jeanca
+Hello, Jeanca
