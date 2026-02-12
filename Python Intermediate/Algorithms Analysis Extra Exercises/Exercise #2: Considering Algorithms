@@ -1,0 +1,62 @@
+# Consider the following Algorithms 
+# 1) Time Complexity
+# linear_search
+# for item in my_list:
+#    if item == target:
+#        return True
+
+
+# Worst case: checks every element → O(n)
+
+# Average case: still proportional to n → O(n)
+
+# Best case: first element matches → O(1)
+
+# Space: O(1)
+
+# binary_search
+
+# Each step eliminates half of the remaining elements.
+
+# Worst case: O(log n)
+
+# Average case: O(log n)
+
+# Best case: middle is the target → O(1)
+
+# Space: O(1) (iterative version)
+
+# 2) When should you use each one?
+# Use linear search when:
+
+# the list is small
+# the list is not sorted
+# you will perform very few searches
+# data changes frequently
+
+# Use binary search when:
+
+# the list is sorted (mandatory)
+# the dataset is large
+# you will run many searches
+# you can afford sorting once and searching many times
+
+# 3) What happens if the list is NOT sorted?
+
+# Binary search depends on order.
+
+# If the list is not sorted:
+# it can return False even if the element exists
+# results are unreliable
+
+# In that case, you must:
+
+# either use linear search
+# or sort first, then apply binary search.
+
+# Summary 
+# linear_search  → O(n)
+# binary_search  → O(log n)
+
+# Binary search is more efficient for large, sorted datasets.
+# If the list is not sorted, binary search cannot be used safely.
