@@ -1,0 +1,18 @@
+def bubble_sort_right_to_left(arr):
+    n = len(arr)
+
+    for i in range(n):
+        # After each pass, the smallest element
+        # is placed at the beginning.
+        for j in range(n - 1, i, -1):
+            if arr[j] < arr[j - 1]:
+                # Swap
+                arr[j], arr[j - 1] = arr[j - 1], arr[j]
+
+    return arr
+
+
+# Example of usage
+# numbers = [5, 3, 8, 4, 2]
+# sorted_numbers = bubble_sort_right_to_left(numbers)
+# print(sorted_numbers)
