@@ -1,0 +1,40 @@
+def validated_bubble_sort(arr):
+    # Validate empty list
+    if len(arr) == 0:
+        raise ValueError("Error: The list is empty")
+
+    # Validate numeric elements
+    for item in arr:
+        if not isinstance(item, (int, float)):
+            raise ValueError("Error: The list contains non-numeric elements")
+
+    # If validation passes → apply bubble sort
+    n = len(arr)
+
+    for i in range(n - 1):
+        for j in range(0, n - 1 - i):
+            if arr[j] > arr[j + 1]:
+                temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+
+    return arr
+
+
+# Example
+# print(validated_bubble_sort([5, 1, 4, 2]))
+
+# Example of Good Input 
+# Return: [5, 1, 4, 2]
+
+# Example of Non Numeric
+# [5, "hola", 2]
+# Return: ValueError: Error: The list contains non-numeric elements
+
+# Example of Emty Value
+# []
+# ValueError: Error: The list is empty
+
+
+
+
