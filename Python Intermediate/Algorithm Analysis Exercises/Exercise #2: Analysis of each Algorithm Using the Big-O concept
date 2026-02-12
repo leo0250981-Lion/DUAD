@@ -1,0 +1,31 @@
+# 1) print_numbers_times_2(numbers_list)
+
+# Time: O(n) (one loop through the list)
+
+# Space: O(1) (no extra data structures; printing doesn’t count as stored space)
+
+# 2) check_if_lists_have_an_equal(list_a, list_b)
+
+# Time (worst case): O(a · b)
+# (nested loops, compares every pair if no match)
+
+# Time (best case): O(1)
+# (if the first pair compared matches and returns immediately)
+
+# Space: O(1)
+
+# 3) print_10_or_less_elements(list_to_print)
+
+# The loop runs min(len(list_to_print), 10) times.
+
+# Time: O(1) (constant time, at most 10 prints)
+
+# Space: O(1)
+
+# 4) generate_list_trios(list_a, list_b, list_c)
+
+# Triple nested loops create all combinations.
+
+# Time: O(a · b · c)
+
+# Space: O(a · b · c) (because result_list stores that many strings)
