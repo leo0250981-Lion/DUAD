@@ -15,6 +15,6 @@ class Category:
 class Movement:
     date: str          # dd/mm/yyyy
     title: str
-    amount: float      # positive for Income, negative for Expense (or enforce by type)
+    amount: float      # Income positive, Expense negative
     category: str
     type: MovementType
