@@ -1,0 +1,41 @@
+import unittest
+
+
+class Operations:
+    
+    def add(self, a, b):
+        return a + b
+
+    def average(self, a, b, c):
+        return (a + b + c) / 3
+
+    def to_positive(self, number):
+        return abs(number)
+
+
+class TestOperations(unittest.TestCase):
+
+    def setUp(self):
+        self.operations = Operations()
+
+    # ✅ Positive numbers case
+    def test_positive_numbers(self):
+        self.assertEqual(self.operations.add(5, 3), 8)
+        self.assertEqual(self.operations.average(3, 6, 9), 6)
+        self.assertEqual(self.operations.to_positive(10), 10)
+
+    # ✅ Negative numbers case
+    def test_negative_numbers(self):
+        self.assertEqual(self.operations.add(-5, -3), -8)
+        self.assertEqual(self.operations.average(-3, -6, -9), -6)
+        self.assertEqual(self.operations.to_positive(-10), 10)
+
+    # ✅ Zero case
+    def test_zero_values(self):
+        self.assertEqual(self.operations.add(0, 0), 0)
+        self.assertEqual(self.operations.average(0, 0, 0), 0)
+        self.assertEqual(self.operations.to_positive(0), 0)
+
+
+if __name__ == "__main__":
+    unittest.main()
