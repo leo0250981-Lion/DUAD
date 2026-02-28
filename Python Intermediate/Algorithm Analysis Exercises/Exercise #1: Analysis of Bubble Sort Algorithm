@@ -1,0 +1,67 @@
+#What does Big-O measures?
+
+# Big-O tells us how the running time grows as the input size (n) becomes large.
+# It focuses on:
+# 1- number of comparisons
+# 2- number of swaps
+# 3- not real seconds.
+
+# Structure of Bubble Sort and why it matters.
+
+# Example of it: 
+# Bubble sort uses two loops:
+
+# for i in range(n):
+#    for j in range(n - i - 1):
+#        compare & maybe swap
+
+# So for each pass, we compare many elements.
+# Worst Case Time Complexity → O(n²)
+# This happens when the list is in reverse order.
+
+# Example:
+
+# [5, 4, 3, 2, 1]
+
+# Every comparison leads to a swap.
+
+# Number of operations roughly becomes:
+
+# n * n = n²
+
+# So:
+
+# Worst Case = O(n²)
+
+# Average Case → O(n²)
+
+# Even with random data, it still needs many comparisons.
+
+# Average = O(n²)
+
+# Best Case → depends
+# Without optimization
+
+# Even if already sorted, it still runs all loops.
+
+#[1, 2, 3, 4, 5]
+
+# Best = O(n²)
+
+# With early-stop optimization
+
+# If we stop when no swaps happen → only 1 pass.
+
+# Best = O(n)
+
+# Space Complexity → O(1)
+
+# Bubble sort sorts in place.
+
+# No extra arrays.
+
+#### Summary ####
+# Worst Case: O(n²)
+# Average Case: O(n²)
+# Best Case: O(n²)  // or O(n) with optimization
+# Space Complexity: O(1)
