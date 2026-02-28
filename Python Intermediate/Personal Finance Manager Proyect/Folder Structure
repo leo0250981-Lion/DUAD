@@ -1,9 +1,0 @@
-personal_finance_manager/
-  main.py
-  interfaces.py
-  logic.py
-  persistence.py
-  models.py
-  validators.py
-  tests/
-    test_logic.py
