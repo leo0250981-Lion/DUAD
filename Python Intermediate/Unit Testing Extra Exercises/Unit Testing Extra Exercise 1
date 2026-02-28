@@ -18,19 +18,19 @@ class TestOperations(unittest.TestCase):
     def setUp(self):
         self.operations = Operations()
 
-    # ✅ Positive numbers case
+    # Positive numbers case
     def test_positive_numbers(self):
         self.assertEqual(self.operations.add(5, 3), 8)
         self.assertEqual(self.operations.average(3, 6, 9), 6)
         self.assertEqual(self.operations.to_positive(10), 10)
 
-    # ✅ Negative numbers case
+    # Negative numbers case
     def test_negative_numbers(self):
         self.assertEqual(self.operations.add(-5, -3), -8)
         self.assertEqual(self.operations.average(-3, -6, -9), -6)
         self.assertEqual(self.operations.to_positive(-10), 10)
 
-    # ✅ Zero case
+    # Zero case
     def test_zero_values(self):
         self.assertEqual(self.operations.add(0, 0), 0)
         self.assertEqual(self.operations.average(0, 0, 0), 0)
