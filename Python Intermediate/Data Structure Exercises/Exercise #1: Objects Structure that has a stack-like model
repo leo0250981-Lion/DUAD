@@ -1,0 +1,123 @@
+# Stack Implementation (LIFO) 
+class StackNode:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
+class Stack:
+    def __init__(self):
+        self.top = None
+
+    def push(self, value):
+        new_node = StackNode(value)
+        new_node.next = self.top
+        self.top = new_node
+
+    def pop(self):
+        if self.top is None:
+            return None
+
+        removed_value = self.top.value
+        self.top = self.top.next
+        return removed_value
+
+    def print_stack(self):
+        current = self.top
+        print("Stack (top -> bottom):")
+
+        while current is not None:
+            print(current.value)
+            current = current.next
+
+#Double Ended Queue (Deque) Implementation 
+class DequeNode:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+
+class Deque:
+    def __init__(self):
+        self.front = None
+        self.rear = None
+
+    def add_front(self, value):
+        new_node = DequeNode(value)
+
+        if self.front is None:
+            self.front = self.rear = new_node
+        else:
+            new_node.next = self.front
+            self.front.prev = new_node
+            self.front = new_node
+
+    def add_rear(self, value):
+        new_node = DequeNode(value)
+
+        if self.rear is None:
+            self.front = self.rear = new_node
+        else:
+            new_node.prev = self.rear
+            self.rear.next = new_node
+            self.rear = new_node
+
+    def remove_front(self):
+        if self.front is None:
+            return None
+
+        removed_value = self.front.value
+        self.front = self.front.next
+
+        if self.front is not None:
+            self.front.prev = None
+        else:
+            self.rear = None
+
+        return removed_value
+
+    def remove_rear(self):
+        if self.rear is None:
+            return None
+
+        removed_value = self.rear.value
+        self.rear = self.rear.prev
+
+        if self.rear is not None:
+            self.rear.next = None
+        else:
+            self.front = None
+
+        return removed_value
+
+    def print_deque(self):
+        current = self.front
+        print("Deque (front -> rear):")
+
+        while current is not None:
+            print(current.value)
+            current = current.next
+
+#Example of Usage 
+# Stack Example
+# stack = Stack()
+# stack.push(10)
+# stack.push(20)
+# stack.push(30)
+# stack.print_stack()
+# stack.pop()
+# stack.print_stack()
+
+print("-------------")
+
+# Deque Example
+# deque = Deque()
+# deque.add_front(1)
+# deque.add_rear(2)
+# deque.add_front(0)
+# deque.add_rear(3)
+# deque.print_deque()
+# deque.remove_front()
+# deque.remove_rear()
+# deque.print_deque()
