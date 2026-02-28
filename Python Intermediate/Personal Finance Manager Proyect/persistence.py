@@ -3,9 +3,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-
-CATEGORIES_FILE = Path("categories.json")
-MOVEMENTS_FILE = Path("movements.json")
+DATA_FILE = Path("finance_data.json")
 
 
 def load_json(path: Path, default):
