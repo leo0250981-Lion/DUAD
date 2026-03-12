@@ -1,0 +1,56 @@
+#"""
+#Exercise #3: Algorithm Analysis
+
+#Function analyzed:
+#"""
+
+#def print_all_pairs(my_dict):
+    for key1 in my_dict:
+        for key2 in my_dict:
+            print(f"{key1}-{key2}")
+
+
+#"""
+#Answers:
+
+#1) What is the time complexity?
+
+#Let n be the number of keys in the dictionary.
+
+#The outer loop runs n times.
+#The inner loop also runs n times for each iteration of the outer loop.
+
+#Total operations:
+#n * n = n²
+
+#Time Complexity: O(n²)
+
+#This is a quadratic time complexity because the number of operations
+#grows proportionally to the square of the number of elements.
+
+
+#2) How long would it take if there are 1,000,000 keys?
+
+#If n = 1,000,000
+
+#Total iterations:
+#1,000,000 * 1,000,000 = 1,000,000,000,000
+
+#That equals:
+
+#1 trillion operations (10^12)
+
+#Even if a computer could execute 1 billion operations per second
+#(which is very optimistic), it would take:
+
+#1,000,000,000,000 / 1,000,000,000 = 1000 seconds
+
+#1000 seconds ≈ 16.6 minutes
+
+#However, since this function prints in every iteration,
+#and printing is slow, in reality it could take hours
+#or become practically impossible to complete.
+
+#Conclusion:
+#The algorithm is inefficient for large datasets due to its O(n²) complexity.
+#"""
