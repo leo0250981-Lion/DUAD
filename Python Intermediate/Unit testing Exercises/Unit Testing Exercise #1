@@ -1,0 +1,29 @@
+# test_bubble_sort.py
+import pytest
+
+# Adjust this import according to your project structure:
+# from your_module import bubble_sort
+from bubble_sort import bubble_sort
+
+
+def test_bubble_sort_small_list():
+    data = [3, 1, 2]
+    assert bubble_sort(data) == [1, 2, 3]
+
+
+def test_bubble_sort_large_list_over_100_elements():
+    # Large list (>100 elements) in reverse order
+    data = list(range(150, 0, -1))
+    result = bubble_sort(data)
+    assert result == sorted(data)
+
+
+def test_bubble_sort_empty_list():
+    assert bubble_sort([]) == []
+
+
+@pytest.mark.parametrize("invalid_value", [None, 123, "hello", (3, 2, 1), {"a": 1}])
+def test_bubble_sort_rejects_non_list_inputs(invalid_value):
+    # If your implementation raises TypeError (most common case)
+    with pytest.raises(TypeError):
+        bubble_sort(invalid_value)
