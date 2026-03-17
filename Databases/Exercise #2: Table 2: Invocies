@@ -13,6 +13,6 @@
 # |     INV001     | 2026-03-15    | test@email.com  |    2400      |
 # |________________|_______________|_________________|______________|
 
-# 🔗 Relationships
-#    - Invoices → Invoice_Details (One-to-Many)
-#    - Invoices ↔ Products (Many-to-Many via Invoice_Details)
+# Exercise #5: 🔗 Relationships
+# - Invoices → Invoice_Details (One-to-Many)
+# - Invoices ↔ Products (Many-to-Many via Invoice_Details)
