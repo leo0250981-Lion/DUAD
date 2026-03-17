@@ -21,4 +21,4 @@
 # - Products → Cart_Details (One-to-Many)
 
 # - Products ↔ Invoices (Many-to-Many via Invoice_Details)
-#- Products ↔ Shopping_Cart (Many-to-Many via Cart_Details)
+# - Products ↔ Shopping_Cart (Many-to-Many via Cart_Details)
