@@ -1,0 +1,73 @@
+# When a user types www.youtube.com
+# into a browser, several steps occur before the video appears on the screen.
+
+# Step 1: The Client (Browser)
+# The browser (Chrome, Edge, Firefox, etc.) acts as the client.
+# When the user enters:
+# www.youtube.com
+# The browser:
+# Checks its cache to see if it already knows the IP address.
+# If not, it sends a request to the DNS server to find the IP address of the domain.
+
+# Step 2: DNS Resolution
+# The DNS (Domain Name System) works like the phonebook of the internet.
+# Example:
+# www.youtube.com → 142.250.xxx.xxx
+# Process:
+# The browser asks the DNS resolver (usually provided by the ISP).
+# The resolver queries DNS servers until it finds the correct IP address.
+# The DNS returns the IP address to the browser.
+
+# Step 3: Using the IP Address
+# Once the browser receives the IP address, it now knows which server to contact.
+# The browser establishes a connection using:
+# TCP/IP
+# Port 443 (HTTPS)
+
+# Step 4: HTTP / HTTPS Protocol
+# The browser sends a request to the YouTube server using HTTP or HTTPS.
+# Example request:
+# GET / HTTP/1.1
+# Host: www.youtube.com
+# With HTTPS, communication is encrypted using SSL/TLS, which protects the data being transmitted.
+
+# Step 5: Server Response
+# The YouTube server receives the request and:
+# Processes the request.
+#Retrieves information from databases.
+# Prepares the webpage content.
+# The server sends back:
+# 1-HTML
+# 2-CSS
+# 3-JavaScript
+# 4-Video data
+# 5-Media files
+
+# Step 6: Rendering in the Browser
+# The browser receives the files and:
+# Interprets HTML (structure)
+# Applies CSS (design)
+# Executes JavaScript (interactivity)
+# Loads the video stream
+# Finally, the video appears on the screen.
+
+# Communication Diagram
+# User
+# │
+# ▼
+# Browser (Client)
+# │
+# │ DNS Request
+#  ▼
+# DNS Server
+# │
+# │ Returns IP
+# ▼
+# YouTube Server
+# │
+# │ HTTP/HTTPS Response
+# ▼
+# Browser renders page
+# │
+# ▼
+# Video appears

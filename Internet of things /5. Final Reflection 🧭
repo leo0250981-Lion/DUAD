@@ -1,0 +1,4 @@
+# Through this assignment, I learned how APIs enable communication between clients and servers. 
+# They provide structured ways to request and receive data over the internet using HTTP protocols and standardized formats such as JSON.
+# Using Postman helped me better understand how API requests work by allowing me to test endpoints, observe response codes, inspect headers, and analyze returned JSON data. 
+# It is a powerful tool for developers to test APIs before integrating them into applications.

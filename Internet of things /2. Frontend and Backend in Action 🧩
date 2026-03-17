@@ -1,0 +1,60 @@
+# Suppose we are building a medical appointment scheduling web application.
+
+# Frontend
+# The frontend is the part users interact with.
+# Examples in the application:
+# 1-Appointment booking form
+# 2-Login page
+# 3-Calendar with available times
+# 4-Patient dashboard
+
+# Possible Frontend Technologies
+# 1-HTML
+# 2-CSS
+# 3-JavaScript
+# 4-React (framework of JS)
+# 5-Angular (framework of JS)
+# 6-Vue.js (framework of JS)
+
+# Backend
+# The backend handles the logic and data of the system.
+
+# Examples:
+# 1-Storing appointments in a database
+# 2-Authenticating users
+# 3-Managing doctor availability
+# 4-Sending appointment confirmations
+
+# Possible Backend Technologies
+# 1-Node.js
+# 2-Python (Django / Flask)
+# 3-Java (Spring Boot)
+
+# Databases
+# 1-PostgreSQL
+# 2-MySQL
+# 3-MongoDB
+
+# Communication Between Frontend and Backend
+# Frontend communicates with backend through APIs.
+
+# Process:
+# 1-The frontend sends an HTTP request.
+# 2-The request reaches an API endpoint.
+# 3-The backend processes the request.
+# 4-The backend returns a response (usually JSON).
+
+# Example:
+# 1-Frontend request:
+# 2-GET /api/appointments
+
+# Backend response:
+# {
+#  "doctor": "Dr. Garcia",
+#  "date": "2026-03-15",
+#  "time": "10:30"
+# }
+
+# Communication model:
+# Frontend → HTTP Request → API → Backend
+# Backend → HTTP Response → Frontend

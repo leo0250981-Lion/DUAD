@@ -1,0 +1,55 @@
+___________________________________________________________________________________________
+| API Type |	Data Format	| Flexibility Level	| Implementation Difficulty |	Current Usage |
+|__________|______________|___________________|___________________________|_______________|
+|REST	     |   JSON / XML |     Medium	      |          Low	            |     High      |
+|__________|______________|___________________|___________________________|_______________| 
+|SOAP	     |     XML	    |      Low	        |          High	            |     Low       |
+|__________|______________|___________________|___________________________|_______________| 
+|GraphQL   |    JSON	    |    Very High	    |          Medium	          |     High      |
+|__________|______________|___________________|___________________________|_______________|
+
+# REST
+# REST is an architecture based on resources and HTTP methods.
+
+# Common methods:
+# 1-GET
+# 2-POST
+# 3-PUT
+# 4-DELETE
+
+# Example:
+# 1-GET /users
+# 2-POST /appointments
+
+# REST is currently the most widely used API style.
+
+# SOAP
+# SOAP is an older protocol that uses XML messaging.
+
+# Characteristics:
+# 1-Strict structure
+# 2-Strong security standards
+# 3-Used in enterprise environments (banks, legacy systems)
+
+# GraphQL
+# GraphQL allows the client to request exactly the data it needs.
+
+# Example query:
+# query {
+#  user {
+#    name
+#    appointments
+#  }
+# }
+
+# Advantages:
+# 1-Reduces unnecessary data transfer
+# 2-More efficient for complex applications
+
+# Best Option for a Modern Startup
+# For a modern startup building an online reservation system, GraphQL or REST would be the best options.
+# GraphQL can be more efficient because it:
+# 1-Allows precise data queries
+# 2-Reduces multiple API calls
+# 3-Improves performance in complex applications
+# However, REST remains very popular due to its simplicity and wide adoption.
