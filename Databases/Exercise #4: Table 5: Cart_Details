@@ -13,6 +13,6 @@
 # |        1       |    1    |     P001     |    2     |
 # |________________|_________|______________|__________|
 
-# Exercise 5 🔗 Relationships
+# Exercise #5: 🔗 Relationships
 # - Cart_Details → Products (Many-to-One)
 # - Cart_Details → Shopping_Cart (Many-to-One)
