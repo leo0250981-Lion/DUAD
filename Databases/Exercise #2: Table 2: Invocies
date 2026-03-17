@@ -1,19 +1,14 @@
 # 🧾 TABLE 2: Invoices
 
-# Create another /table
-
-# Rename: Invoices
-
 # Columns:
-# Column Name	Type
-# invoice_number	Text
-# purchase_date	Date
-# buyer_email	Email
-# total_amount	Number
+# - invoice_number (Text)
+# - purchase_date (Date)
+# - buyer_email (Email)
+# - total_amount (Number)
 
-# Example:
-# _____________________________________________________________________
-# | invoice_number |	purchase_date |	  buyer_email	 | total_amount |
-# |________________|__________________|__________________|______________|
-# |    INV001	   |   2026-03-15     |  test@email.com  |	  2400      |  
-# |________________|__________________|__________________|______________|
+# Example
+# ___________________________________________________________________
+# | invoice_number | purchase_date | buyer_email     | total_amount |
+# |----------------|---------------|-----------------|--------------|
+# |     INV001     | 2026-03-15    | test@email.com  |    2400      |
+# |________________|_______________|_________________|______________|
