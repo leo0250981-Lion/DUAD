@@ -15,6 +15,6 @@
 # | 2         | INV001         | P002         | 1        | 900          |
 # +-----------+----------------+--------------+----------+--------------+
 
-# 🔗 Relationships
-#    - Invoice_Details → Products (Many-to-One)
-#    - Invoice_Details → Invoices (Many-to-One)
+# Exercise #5: 🔗 Relationships
+# - Invoice_Details → Products (Many-to-One)
+# - Invoice_Details → Invoices (Many-to-One)
