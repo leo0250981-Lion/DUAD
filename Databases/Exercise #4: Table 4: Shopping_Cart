@@ -11,6 +11,6 @@
 # |    1    | user@email.com   |
 # |_________|__________________|
 
-# 🔗 Relationships
-#    - Shopping_Cart → Cart_Details (One-to-Many)
-#    - Shopping_Cart ↔ Products (Many-to-Many via Cart_Details)
+# Exercise #5: 🔗 Relationships
+# - Shopping_Cart → Cart_Details (One-to-Many)
+# - Shopping_Cart ↔ Products (Many-to-Many via Cart_Details)
