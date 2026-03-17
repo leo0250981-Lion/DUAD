@@ -1,0 +1,20 @@
+# TABLE 3: Invoice Details
+
+# Columns:
+# - detail_id (Number)
+# - invoice_number (Text)
+# - product_code (Text)
+# - quantity (Number)
+# - total_amount (Number)
+
+# Example
+# +-----------+----------------+--------------+----------+--------------+
+# | detail_id | invoice_number | product_code | quantity | total_amount |
+# +-----------+----------------+--------------+----------+--------------+
+# | 1         | INV001         | P001         | 1        | 1500         |
+# | 2         | INV001         | P002         | 1        | 900          |
+# +-----------+----------------+--------------+----------+--------------+
+
+# Exercise #5: 🔗 Relationships
+# - Invoice_Details → Products (Many-to-One)
+# - Invoice_Details → Invoices (Many-to-One)

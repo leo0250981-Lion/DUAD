@@ -1,0 +1,18 @@
+# 🧾 TABLE 2: Invoices
+
+# Columns:
+# - invoice_number (Text)
+# - purchase_date (Date)
+# - buyer_email (Email)
+# - total_amount (Number)
+
+# Example
+# ___________________________________________________________________
+# | invoice_number | purchase_date | buyer_email     | total_amount |
+# |----------------|---------------|-----------------|--------------|
+# |     INV001     | 2026-03-15    | test@email.com  |    2400      |
+# |________________|_______________|_________________|______________|
+
+# Exercise #5: 🔗 Relationships
+# - Invoices → Invoice_Details (One-to-Many)
+# - Invoices ↔ Products (Many-to-Many via Invoice_Details)

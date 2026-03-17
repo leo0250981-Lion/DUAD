@@ -1,0 +1,16 @@
+# 🛒 TABLE 4: Shopping Cart
+
+# Columns:
+# - cart_id (Number)
+# - user_email (Email)
+
+# Example
+# ______________________________
+# | cart_id | user_email       |
+# |---------|------------------|
+# |    1    | user@email.com   |
+# |_________|__________________|
+
+# Exercise #5: 🔗 Relationships
+# - Shopping_Cart → Cart_Details (One-to-Many)
+# - Shopping_Cart ↔ Products (Many-to-Many via Cart_Details)

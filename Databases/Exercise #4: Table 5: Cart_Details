@@ -1,0 +1,18 @@
+# 🧩 TABLE 5: Cart_Details
+
+# Columns:
+# - cart_detail_id (Number)
+# - cart_id (Number)
+# - product_code (Text)
+# - quantity (Number)
+
+# Example
+# ______________________________________________________
+# | cart_detail_id | cart_id | product_code | quantity |
+# |----------------|---------|--------------|----------|
+# |        1       |    1    |     P001     |    2     |
+# |________________|_________|______________|__________|
+
+# Exercise #5: 🔗 Relationships
+# - Cart_Details → Products (Many-to-One)
+# - Cart_Details → Shopping_Cart (Many-to-One)
