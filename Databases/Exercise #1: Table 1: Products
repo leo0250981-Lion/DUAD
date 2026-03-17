@@ -1,21 +1,17 @@
 # 📦 TABLE 1: Products
 
-# Rename the table to: Products
+# Columns:
+# - code (Text)
+# - name (Text)
+# - price (Number)
+# - date_added (Date)
+# - brand (Text)
 
-# Add these columns:
-
-# Column Name	Type
-# code	Text
-# name	Text
-# price	Number
-# date_added	Date
-# brand	Text
-
-# Example:
-# __________________________________________________________
-# | code  |  name	|   price   |  date_added  |   brand   |
-# |_______|_________|___________|______________|___________|
-# |P001   | Laptop	|   1500	|  2026-03-10  |   Dell    |
-# |_______|_________|___________|______________|___________|
-# |P002   | Phone	|   900	    |  2026-03-11  |  Samsung  |
-# |_______|_________|___________|______________|___________|
+## Example
+# ________________________________________________
+# | code | name   | price | date_added | brand   |
+# |------|--------|-------|------------|---------|
+# | P001 | Laptop | 1500  | 2026-03-10 | Dell    |
+# |------|--------|-------|------------|---------|
+# | P002 | Phone  | 900   | 2026-03-11 | Samsung |
+# |______|________|_______|____________|_________|
