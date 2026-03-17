@@ -15,3 +15,10 @@
 # |------|--------|-------|------------|---------|
 # | P002 | Phone  | 900   | 2026-03-11 | Samsung |
 # |______|________|_______|____________|_________|
+
+# 🔗 Relationships
+# - Products → Invoice_Details (One-to-Many)
+# - Products → Cart_Details (One-to-Many)
+
+# - Products ↔ Invoices (Many-to-Many via Invoice_Details)
+#- Products ↔ Shopping_Cart (Many-to-Many via Cart_Details)
