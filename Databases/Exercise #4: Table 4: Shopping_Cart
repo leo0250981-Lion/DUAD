@@ -1,0 +1,15 @@
+# 🛒 TABLE 4: Shopping_Cart
+
+# Rename: Shopping_Cart
+
+# Columns:
+# Column Name	Type
+# cart_id	Number
+# user_email	Email
+ 
+# Example:
+# ________________________________
+# |cart_id |      user_email     |
+# |________|_____________________|
+# |    1	 |    user@email.com   |
+# |________|_____________________|
